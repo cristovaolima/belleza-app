@@ -19,6 +19,6 @@ Teste desenvolvido com o layout descrito no [documento](https://xd.adobe.com/vie
 
 # Screenshots
  
-  Tela Boas vindas | Tela Cadastro | Tela Pricipal |
+  Tela Boas vindas | Tela Cadastro | Tela Principal |
  ------------|---------------|---------------|
  ![](https://github.com/cristovaolima/belleza-app/blob/ca80d6f383a23c71650a012010a9108407b34cf5/screenshots/screenshot-1.jpg?raw=true) | ![](https://github.com/cristovaolima/belleza-app/blob/ca80d6f383a23c71650a012010a9108407b34cf5/screenshots/screenshot-2.jpg?raw=true) | ![](https://github.com/cristovaolima/belleza-app/blob/ca80d6f383a23c71650a012010a9108407b34cf5/screenshots/screenshot-3.jpg?raw=true)
