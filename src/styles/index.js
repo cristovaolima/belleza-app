@@ -8,9 +8,18 @@ export const Background = styled.View`
 `;
 
 export const Container = styled.View`
-    /* flex: 1; */
+    height: 100%;
+    weight: 100%;
     flex-direction: column;
     align-items: center;
+    background-color: ${props => props.color ? props.color : 'white'};
+`;
+
+export const ContainerHome = styled.ScrollView`
+    flex: 1;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background-color: ${props => props.color ? props.color : 'white'};
 `;
 
 export const ContainerInput = styled.View`
@@ -82,7 +91,7 @@ export const CheckBox = styled.View`
 
 export const ButtonText = styled.Text`
     color: ${props => props.color ? props.color : 'white'};
-    font-weight: ${props => props.font ? props.font : 'center'};
+    font-weight: ${props => props.font ? props.font : 'normal'};
 `;
 
 export const TextLabel = styled.Text`
@@ -105,20 +114,6 @@ export const TextDescription = styled.Text`
     text-align: center;
 `;
 
-export const Header = styled.View`
-    flex-direction: row;
-    height: 130px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-`;
-
-export const TextHeader = styled.Text`
-    font-size: 20px;
-    font-weight: bold;
-`;
-
 export const Input = styled.TextInput`
     width: 80%;    
     border-radius: 20px;
@@ -128,3 +123,70 @@ export const Input = styled.TextInput`
     padding: 20px 20px;
 
 `;
+
+export const InputAdress = styled.TextInput`
+    width: 85%;    
+    border-radius: 10px;
+    border: 1px solid #c1c5cd;
+    font-size: 17px;
+    margin: 25px 0px 0px 30px;
+    padding: 15px 20px;
+    color: white;
+`;
+
+export const TextHello = styled.Text`
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-weight: bold;
+`;
+
+export const Text = styled.Text`
+    font-size: 15px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 30px;
+`;
+
+export const ContainerList = styled.View`
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 150px;
+    padding-bottom: 30px;
+    background-color: #f0f1f3;
+`;
+
+export const TextCategory = styled.Text`
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0px 20px 30px;
+`;
+
+export const ContainerCard = styled.View`
+    width: 100%;
+    height: 200px;
+    margin-top: -100px;
+`;
+
+export const ContainerCardList = styled.View`
+    width: 100%;
+    height: 300px;
+    /* margin-top: -100px; */
+`;
+
+export const Card = styled.View`
+    width: 280px;
+    height: 180px;
+    background-color: white;
+    margin-right: 15px;
+    margin-left: 25px;
+    border-radius: 30px;
+    /* background-color: #c1c5cd; */
+    /* background-size: contain; */
+    background-image: url(${props => props.img});
+`;
+
+
