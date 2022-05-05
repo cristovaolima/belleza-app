@@ -45,7 +45,7 @@ export default function Login() {
           <S.ButtonText color="#c96a4b">Esqueceu a Senha?</S.ButtonText>
         </S.ButtonOutline>
         <S.ButtonRegister onPress={goRegister}>
-          <S.ButtonText color="#fffffff">Não possui uma conta?</S.ButtonText>
+          <S.ButtonText color="#000">Não possui uma conta?</S.ButtonText>
           <S.ButtonText color="#8fb3ff" font="bold"> Cadastre-se</S.ButtonText>
         </S.ButtonRegister>
       </S.ContainerInput>

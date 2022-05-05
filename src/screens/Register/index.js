@@ -87,7 +87,7 @@ export default function Register() {
       />
       <S.ButtonTerms onPress={checkUncheck}>
         <S.CheckBox check={check}/>
-        <S.ButtonText color="#fffffff">Aceito os termos e condições</S.ButtonText>
+        <S.ButtonText color="#000">Aceito os termos e condições</S.ButtonText>
       </S.ButtonTerms>
       <S.Button onPress={submit}>
         <S.ButtonText>Cadastrar</S.ButtonText>

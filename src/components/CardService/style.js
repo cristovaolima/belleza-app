@@ -2,24 +2,22 @@ import styled from "styled-components";
 
 export const Container = styled.View`
     flex-direction: column;
-    height: 250px;
+    height: 270px;
     width: 200px;
     border-radius: 30px;
     margin: 10px 10px 0px 30px;
     padding-bottom: 10px;
     background-color: white;
-    /* align-items: center; */
-    /* justify-content: flex-end; */
+    align-items: center;
+    justify-content: flex-end;
 `;
 
 export const ContainerInfo = styled.View`
     flex-direction: column;
-    height: 50%;
+    height: 45%;
     width: 100%;
-    padding-left: 20px;
-    background-color: red;
+    padding: 10px 0px 0px 20px;
     align-items: center;
-    justify-content: center;
     align-items: flex-start;
 `;
 
@@ -38,14 +36,23 @@ export const ButtonText = styled.Text`
 `;
 
 export const TextName = styled.Text`
-    font-size: 18px
+    font-size: 18px;
     font-weight: bold;
-    align-items: space-between;
+    color: #000;
 `;
 
 export const TextPrice = styled.Text`
-    font-size: 18px
+    font-size: ${props => props.fontsize ? props.fontsize : '18px'};
     font-weight: ${props => props.font ? props.font : 'normal'};
-    color: ${props => props.color ? props.color : 'black'};
+    color: ${props => props.color ? props.color : '#000'};
     align-items: flex-start;
+    margin-top: ${props => props.margin ? props.margin : '0px'};
+`;
+
+export const Img = styled.Image`
+    width: 100%;
+    height: 40%;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; 
 `;

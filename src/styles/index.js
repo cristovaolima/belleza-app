@@ -17,8 +17,6 @@ export const Container = styled.View`
 
 export const ContainerHome = styled.ScrollView`
     flex: 1;
-    /* flex-direction: column; */
-    /* align-items: center; */
     background-color: ${props => props.color ? props.color : 'white'};
 `;
 
@@ -121,7 +119,6 @@ export const Input = styled.TextInput`
     font-size: 17px;
     margin-bottom: 20px;
     padding: 20px 20px;
-
 `;
 
 export const InputAdress = styled.TextInput`
@@ -174,7 +171,6 @@ export const ContainerCard = styled.View`
 export const ContainerCardList = styled.View`
     width: 100%;
     height: 300px;
-    /* margin-top: -100px; */
 `;
 
 export const Card = styled.View`
@@ -184,9 +180,12 @@ export const Card = styled.View`
     margin-right: 15px;
     margin-left: 25px;
     border-radius: 30px;
-    /* background-color: #c1c5cd; */
-    /* background-size: contain; */
-    background-image: url(${props => props.img});
 `;
 
-
+export const ImgCard = styled.Image`
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 30px;
+`;

@@ -7,12 +7,13 @@ import Register from '../screens/Register';
 import Login from '../screens/Login';
 
 const AppStack = createStackNavigator();
+import TabsRoutes from './tabs.routes';
 
 export default function AppRoutes() {
     return (
         <AppStack.Navigator>
             <AppStack.Screen name="Welcome" component={Welcome} options={{headerShown: false}}/>
-            <AppStack.Screen name="Home" component={Home} options={{headerShown: false}}/>
+            <AppStack.Screen name="Home" component={TabsRoutes} options={{headerShown: false}}/>
             <AppStack.Screen name="Register" component={Register} options={{headerShown: false}}/>
             <AppStack.Screen name="Login" component={Login} options={{headerShown: false}}/>
         </AppStack.Navigator>
